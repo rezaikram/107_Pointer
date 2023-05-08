@@ -11,3 +11,8 @@ class mahasiswa {
 int main() {
 	mahasiswa mhs{ 1 };		// Object mhs
 	mhs.showNim();			// Member access Operator
+
+	mahasiswa& refMhs = mhs;	// Pointer referece
+	refMhs.nim = 2;			// Member Accsess Operator
+	mhs.showNim();
+
